@@ -2,15 +2,6 @@
 
 # 🚀 Data Leverager – Power Query Transformation Project
 
-### 📊 Advanced Data Cleaning, Transformation & ETL using Power BI
-
-<img src="https://img.shields.io/badge/Tool-Power%20BI-yellow?style=for-the-badge&logo=powerbi" />
-<img src="https://img.shields.io/badge/Language-Power%20Query-blue?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Project-ETL%20Workflow-success?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" />
-
-</div>
-
 ---
 
 # 📌 Project Overview
