@@ -1,225 +1,336 @@
-# Data Leverager – Power Query Transformation Project
+<div align="center">
 
-## Project Overview
-This project demonstrates advanced data transformation, cleaning, and preparation techniques using **Microsoft Power BI** and **Power Query Editor**. The goal of this project is to import data from multiple sources, clean and transform the data, create calculated columns, perform data profiling, and prepare the dataset for reporting and dashboard analysis.
+# 🚀 Data Leverager – Power Query Transformation Project
 
-The project focuses on practical business scenarios such as sales analysis, employee data management, and data standardization.
+### 📊 Advanced Data Cleaning, Transformation & ETL using Power BI
 
----
+<img src="https://img.shields.io/badge/Tool-Power%20BI-yellow?style=for-the-badge&logo=powerbi" />
+<img src="https://img.shields.io/badge/Language-Power%20Query-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Project-ETL%20Workflow-success?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" />
 
-# Tools & Technologies
-- Microsoft Power BI
-- Power Query Editor
-- DAX (Basic Calculations)
-- Data Transformation Techniques
-- Data Cleaning & Profiling
+</div>
 
 ---
 
-# Project Objectives
-- Extract data from different sources.
-- Clean and standardize raw datasets.
-- Create calculated columns and conditional logic.
-- Perform data profiling and quality checks.
-- Merge and append multiple datasets.
-- Transform datasets into analysis-ready format.
-- Build reusable and dynamic Power Query workflows.
+# 📌 Project Overview
+
+This project demonstrates a complete **ETL (Extract, Transform, Load)** workflow using **Microsoft Power BI** and **Power Query Editor**.
+
+The project focuses on:
+- Cleaning raw business data
+- Transforming datasets into analytical format
+- Creating reusable Power Query workflows
+- Performing data profiling & quality checks
+- Merging and appending multiple datasets
+- Preparing data for dashboard reporting
+
+This project simulates real-world business scenarios such as:
+- 📈 Sales Analysis
+- 👨‍💼 Employee Management
+- 🌍 Regional Reporting
+- 💰 Financial Calculations
 
 ---
 
-# Dataset Information
-The project uses multiple datasets related to:
-- Sales Data
-- Employee Data
-- Regional Information
-- Monthly Performance Data
+# 🛠️ Tools & Technologies
 
-The datasets are transformed and combined inside Power Query for analytical purposes.
-
----
-
-# Power Query Tasks Implemented
-
-## 1. Data Extraction
-- Loaded HTML table data from web sources.
-- Imported Excel files from local folders.
-- Connected CSV and Excel datasets.
-- Loaded employee datasets containing:
-  - Employee ID
-  - Employee Name
-  - Department
-  - Region
-  - Joining Date
+| Tool | Purpose |
+|------|----------|
+| 📊 Power BI | Data Visualization & Modeling |
+| 🔄 Power Query | Data Transformation |
+| 📑 Excel / CSV | Data Sources |
+| 🧮 DAX | Calculated Columns & Measures |
+| 📂 Folder Connection | Dynamic Data Loading |
 
 ---
 
-## 2. Basic Data Transformation
-- Removed blank rows and columns.
-- Promoted first row as headers.
-- Renamed columns for better readability.
-- Changed data types appropriately.
-- Removed duplicate and null values.
-- Standardized numeric and currency formats.
+# 🎯 Project Objectives
+
+✅ Import data from multiple sources  
+✅ Clean and standardize datasets  
+✅ Create calculated and conditional columns  
+✅ Perform data profiling & quality validation  
+✅ Merge and append datasets dynamically  
+✅ Prepare data for dashboard analysis  
+✅ Build scalable Power Query transformations  
 
 ---
 
-## 3. Text Transformation
-Used various text functions for data cleaning:
-- UPPER()
-- LOWER()
-- TRIM()
-- CLEAN()
-- REPLACE()
-- Split Column by Delimiter
+# 📂 Dataset Information
 
-Purpose:
-- Standardize customer names.
-- Clean address and text fields.
-- Remove unwanted spaces and characters.
+The project includes multiple datasets related to:
+
+- 📈 Sales Data
+- 👨‍💼 Employee Data
+- 🌍 Region Information
+- 📅 Monthly Performance Data
+
+All datasets were transformed and structured using Power Query Editor.
 
 ---
 
-## 4. Numeric Transformations
-- Rounded revenue values to 2 decimal places.
-- Created calculated columns:
-  - Revenue
-  - Cost
-  - Profit = Revenue – Cost
+# ⚙️ Power Query Tasks Implemented
 
 ---
 
-## 5. Date & Time Transformations
-Extracted and created:
-- Day
-- Month
-- Year
-- Quarter
+## 1️⃣ Data Extraction
 
-Additional transformations:
-- Created Fiscal Month column.
-- Calculated Age column from Birthdate.
-- Performed custom date formatting.
+### Tasks Performed:
+- 🌐 Loaded HTML table data from web sources
+- 📂 Imported Excel files from folders
+- 📄 Connected CSV & Excel datasets
+- 👨‍💼 Loaded Employee datasets
 
----
-
-## 6. Conditional Columns & Indexing
-Created conditional columns based on sales values:
-- High Sales
-- Medium Sales
-- Low Sales
-
-Additional tasks:
-- Added Index Column
-- Created custom conditional logic
+### Employee Dataset Includes:
+- Employee ID
+- Employee Name
+- Department
+- Region
+- Joining Date
 
 ---
 
-## 7. Pivoting & Unpivoting
-- Pivoted sales data.
-- Unpivoted monthly columns into normalized format.
-- Converted wide-format data into analytical table structure.
+## 2️⃣ Basic Data Transformation
+
+### Implemented:
+- ❌ Removed blank rows & columns
+- 🔝 Promoted first row as headers
+- ✏️ Renamed columns
+- 🔄 Changed data types
+- 🧹 Removed duplicates & null values
+- 💲 Standardized currency formats
 
 ---
 
-## 8. Merging & Appending
-Performed:
-- Merge Queries
-- Append Queries
+## 3️⃣ Text Transformation
 
+### Text Functions Used:
+```powerquery
+UPPER()
+LOWER()
+TRIM()
+CLEAN()
+REPLACE()
+Split Column by Delimiter
+```
+
+### Purpose:
+- Standardize customer names
+- Clean address fields
+- Remove unwanted spaces & characters
+
+---
+
+## 4️⃣ Numeric Transformations
+
+### Created:
+- 💰 Revenue Column
+- 💸 Cost Column
+- 📊 Profit Column
+
+### Formula:
+```text
+Profit = Revenue - Cost
+```
+
+### Additional Tasks:
+- Rounded revenue values to 2 decimal places
+
+---
+
+## 5️⃣ Date & Time Transformations
+
+### Extracted:
+- 📅 Day
+- 📆 Month
+- 🗓️ Year
+- 📈 Quarter
+
+### Additional Features:
+- Fiscal Month Column
+- Age Calculation from Birthdate
+- Custom Date Formatting
+
+---
+
+## 6️⃣ Conditional Columns & Indexing
+
+### Conditional Logic:
+| Sales Value | Category |
+|-------------|----------|
+| > 1000 | High Sales |
+| 500 - 999 | Medium Sales |
+| < 500 | Low Sales |
+
+### Additional Tasks:
+- 🔢 Added Index Column
+- ⚡ Created custom conditional columns
+
+---
+
+## 7️⃣ Pivoting & Unpivoting
+
+### Implemented:
+- Pivot Columns
+- Unpivot Monthly Data
+- Converted wide tables into normalized format
+
+---
+
+## 8️⃣ Merging & Appending
+
+### Merge Queries:
 Merged datasets using:
 - Employee ID
 - Region
 
-Appended:
+### Append Queries:
 - January Sales
 - February Sales
 - March Sales
-- Quarterly datasets
+- Quarterly Data
 
 ---
 
-## 9. Grouping & Aggregation
-Applied grouping operations to calculate:
-- Total Sales
-- Average Order Value
-- Transaction Count
-- Department-wise Performance
-- Region-wise Analysis
+## 9️⃣ Grouping & Aggregation
+
+### Aggregations Performed:
+- 📊 Total Sales
+- 💵 Average Order Value
+- 🔢 Transaction Count
+- 🏢 Department-wise Analysis
+- 🌍 Region-wise Analysis
 
 ---
 
-## 10. Data Profiling & Quality Checks
-Used Power Query profiling tools:
+## 🔟 Data Profiling & Quality Checks
+
+### Power Query Tools Used:
 - Column Profile
 - Column Distribution
 - Column Quality
 
-Performed checks for:
-- Null values
+### Validation Checks:
+- Null Values
 - Errors
-- Duplicate records
-- Unique value distribution
+- Duplicate Records
+- Unique Values
 
 ---
 
-## 11. Source Settings & Parameters
-- Configured dynamic folder path parameters.
-- Managed data source credentials.
-- Used parameterized queries for flexible loading.
+## 1️⃣1️⃣ Source Settings & Parameters
+
+### Configurations:
+- Dynamic Folder Path Parameters
+- Data Source Credentials
+- Parameterized Queries
 
 ---
 
-## 12. Refresh Simulation
-- Simulated new monthly file uploads.
-- Verified auto-refresh functionality.
-- Ensured transformation steps remain consistent.
+## 1️⃣2️⃣ Refresh Simulation
+
+### Implemented:
+- Simulated monthly file uploads
+- Tested auto-refresh functionality
+- Verified transformation consistency
 
 ---
 
-# Key Learnings
-Through this project, the following concepts were practiced:
-- Data Cleaning
-- ETL Process
-- Data Transformation
-- Query Optimization
-- Data Modeling Preparation
-- Business Data Standardization
-- Dynamic Data Loading
-- Power Query Automation
+# 📚 Key Learnings
+
+This project helped practice:
+
+- ✅ ETL Workflow
+- ✅ Data Cleaning
+- ✅ Query Optimization
+- ✅ Power Query Automation
+- ✅ Business Data Standardization
+- ✅ Data Modeling Preparation
+- ✅ Dynamic Data Loading
 
 ---
 
-# Business Use Cases
-This project can be used for:
-- Sales Reporting
-- HR Analytics
-- Regional Performance Tracking
-- Financial Analysis
-- Automated Data Preparation
-- Dashboard Development
+# 💼 Business Use Cases
+
+This project can be applied to:
+
+| Use Case | Description |
+|----------|-------------|
+| 📈 Sales Reporting | Track business performance |
+| 👨‍💼 HR Analytics | Analyze employee data |
+| 🌍 Regional Analysis | Compare regional performance |
+| 💰 Financial Reporting | Revenue & profit analysis |
+| 📊 Dashboard Preparation | Reporting-ready datasets |
 
 ---
 
-# Project Workflow
-1. Import Raw Data
-2. Clean & Transform Data
-3. Apply Business Rules
-4. Merge & Append Datasets
-5. Validate Data Quality
-6. Create Analytical Tables
-7. Prepare Data for Dashboarding
+# 🔄 Project Workflow
+
+```text
+Import Raw Data
+        ↓
+Clean & Transform Data
+        ↓
+Apply Business Rules
+        ↓
+Merge & Append Datasets
+        ↓
+Validate Data Quality
+        ↓
+Create Analytical Tables
+        ↓
+Prepare Dashboard Dataset
+```
 
 ---
 
-# File Included
-- `.pbix` Power BI Project File
-- Power Query Transformations
-- Data Cleaning Steps
-- Aggregation & Profiling Operations
+# 📁 Files Included
+
+```text
+📦 Project Files
+ ┣ 📊 Power BI (.pbix)
+ ┣ 🔄 Power Query Transformations
+ ┣ 📑 Data Cleaning Steps
+ ┗ 📈 Aggregation & Profiling Operations
+```
 
 ---
 
-# Conclusion
-This Power BI Power Query Transformation Project demonstrates real-world ETL and data preparation techniques used in business intelligence workflows. The project highlights the ability to clean, structure, transform, and combine multiple datasets into a reporting-ready format for dashboard creation and business analysis.
+# 🏆 Project Highlights
+
+✨ Real-world ETL workflow  
+✨ Multiple data source integration  
+✨ Advanced Power Query transformations  
+✨ Dynamic parameter handling  
+✨ Business-ready analytical dataset  
 
 ---
+
+# 📌 Conclusion
+
+This project demonstrates how Power BI and Power Query can be used to build a complete data transformation pipeline for business intelligence solutions.
+
+The workflow includes:
+- Data extraction
+- Cleaning
+- Transformation
+- Aggregation
+- Profiling
+- Automation
+
+The final output is a structured, analysis-ready dataset suitable for dashboard development and reporting.
+
+---
+
+<div align="center">
+
+# 👨‍💻 Author
+
+## Om Peshavariya
+
+### Power BI • Excel • Data Analytics
+
+⭐ If you like this project, give it a star!
+
+</div>
