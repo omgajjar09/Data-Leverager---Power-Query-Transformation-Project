@@ -313,15 +313,3 @@ The workflow includes:
 The final output is a structured, analysis-ready dataset suitable for dashboard development and reporting.
 
 ---
-
-<div align="center">
-
-# 👨‍💻 Author
-
-## Om Peshavariya
-
-### Power BI • Excel • Data Analytics
-
-⭐ If you like this project, give it a star!
-
-</div>
